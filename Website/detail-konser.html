@@ -1,0 +1,114 @@
+<!-- detail-konser.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Detail Event: Konser Musik Akustik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: white;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .form-pendaftaran {
+      max-width: 400px;
+      margin: 40px auto;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form-pendaftaran label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-pendaftaran input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #2c2c2c;
+      color: white;
+    }
+
+    .btn-daftar {
+      width: 100%;
+      padding: 12px;
+      background-color: #4ecbff;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-daftar:hover {
+      background-color: #38bdf8;
+    }
+
+    .back-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      background-color: #4fc3f7;
+      color: #000000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #039be5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Detail Event: Konser Musik Akustik</h1>
+
+  <div class="info">
+    <p><strong>Tanggal:</strong> 25 Juni 2025</p>
+    <p><strong>Lokasi:</strong> Jakarta</p>
+    <p><strong>Harga Tiket:</strong> Rp150.000</p>
+  </div>
+
+  <div class="form-pendaftaran">
+    <form action="sukses.html" method="get">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+      <label for="email">Gmail</label>
+      <input type="email" id="email" name="email" placeholder="contoh@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" title="Masukkan alamat Gmail yang valid">
+
+      <label for="hp">Nomor HP</label>
+      <input type="tel" id="hp" name="hp" placeholder="08xxxxxxxxxx" required>
+
+      <button type="submit" class="btn-daftar">Daftar Sekarang</button>
+    </form>
+  </div>
+
+</body>
+</html>
